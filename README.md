@@ -4,7 +4,7 @@ This project is an implementation of a simple Redis-like key-value store in C/C+
 
 ## Build and Run
 
-To make the compilation process more convenient, several scripts have been provided in the `scripts` folder within the `compiler` file. Here are the available scripts:
+To make the compilation process more convenient, scripts have been provided in the `scripts` folder.
 
 if you use `windows`, I not provide the `compiler.bat` file. You need to compile the server and client manually.
 
@@ -15,7 +15,7 @@ if you use `windows`, I not provide the `compiler.bat` file. You need to compile
 
 <br>
 
-**Compile Server and Client**: Compiles both the server and client. (if you use windows, you can use the `compiler.bat` file instead)
+**Compile Server and Client**
 ```bash
 ./scripts/compiler.sh
 ```	
@@ -25,11 +25,11 @@ the output files will be on folder `./outputs`.
 
 **Run Server.**
 ```bash
-./output/server.sh
+./output/server
 ```
 
 **Run Client.**
 ```bash
-./output/client.sh
+./output/client
 ```
 
