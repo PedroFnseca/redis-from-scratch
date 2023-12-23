@@ -95,7 +95,7 @@ int main() {
 
   struct sockaddr_in addr = {};
   addr.sin_family = AF_INET;
-  addr.sin_port = htons(1234);
+  addr.sin_port = htons(PORT_SERVER);
   addr.sin_addr.s_addr = INADDR_ANY;
   int rv = bind(fd, (const sockaddr *)&addr, sizeof(addr));
   if (rv) {
@@ -106,6 +106,8 @@ int main() {
   if (rv) {
     die("listen()");
   }
+
+  printf("The server has been started on port %d\n", PORT_SERVER);
 
   event_loop(fd);
 

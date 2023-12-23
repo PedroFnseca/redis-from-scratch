@@ -1,6 +1,7 @@
 #include <errno.h>
 
 const size_t k_max_msg = 4096;
+const int PORT_SERVER = 1234;
 
 enum {
   STATE_REQ = 0,
